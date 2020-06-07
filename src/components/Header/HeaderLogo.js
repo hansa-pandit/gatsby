@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import Logo from '../../images/logo.png';
+import React from "react"
+import { Link } from "gatsby"
+import Logo from "../../images/logo.png"
 
 function HeaderLogo() {
   return (
@@ -9,7 +9,7 @@ function HeaderLogo() {
         <img className="" src={Logo} alt="Logo" />
       </Link>
     </div>
-  );
+  )
 }
 
-export default HeaderLogo;
+export default HeaderLogo

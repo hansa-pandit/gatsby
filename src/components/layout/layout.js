@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../Header"
-import Footer from "../Footer";
+import Footer from "../Footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,15 +29,20 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header  menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title}  />
-      <main className="main-content" role="main">{children}</main>
-      <Footer/>
+      <Header
+        menuLinks={data.site.siteMetadata.menuLinks}
+        siteTitle={data.site.siteMetadata.title}
+      />
+      <main className="main-content" role="main">
+        {children}
+      </main>
+      <Footer />
     </>
   )
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
-export default Layout;
+export default Layout

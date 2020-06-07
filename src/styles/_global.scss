@@ -51,7 +51,8 @@ h2 {
 
 *:focus,
 button:focus {
-  outline: 1px dotted $orange;
+  outline: 0;
+  box-shadow: 0 0 8px $orange;
 }
 
 .form-group {
